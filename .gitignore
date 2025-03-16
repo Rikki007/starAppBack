@@ -1,0 +1,67 @@
+# local variables
+.env
+.env*.local
+
+# node-modules
+node_modules/
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ide files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# os files
+.DS_Store
+Thumbs.db
+
+# cache 
+.cache/
+.tmp/
+*.tmp
+
+# data base
+*.db
+*.sqlite
+*.sql
+/data/predictions.json  # если не хотите коммитить тестовые данные
+
+# builds and artefacts
+dist/
+build/
+out/
+*.exe
+*.dll
+
+# tests
+coverage/
+.nyc_output/
+
+# npm/yarn cache
+.npm
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# other
+*.bak
+*.seed
+*.pid
+*.pid.lock
+*.sock
+dump.rdb
+*.rdb
+*.env-sample
