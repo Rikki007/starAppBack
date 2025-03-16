@@ -22,7 +22,10 @@ const ZODIAC_SIGNS = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo',
 // Мидлвары
 app.use(bodyParser.json());
 app.use(helmet());
-app.use(cors({ origin: process.env.CORS_ORIGIN }));
+app.use(cors({
+  origin: 'http://127.0.0.1:5500',
+  credentials: true
+}));
 app.use(rateLimit);
 app.use(logger.middleware);
 
@@ -53,7 +56,7 @@ const updatePredictions = async (sign, newData) => {
 };
 
 // Роуты
-app.post('/api/horoscope', async (req, res, next) => {
+app.post('/api/starAppBack', async (req, res, next) => {
   try {
     const { todayDate, sign } = req.body;
     const lowerSign = sign.toLowerCase();
