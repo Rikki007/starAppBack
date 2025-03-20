@@ -100,7 +100,7 @@ app.post('/api/starAppBack', async (req, res, next) => {
     const result = {
       sign: lowerSign,
       date: todayDate,
-      prediction: newPrediction
+      description: newPrediction
     };
 
     await updatePredictions(lowerSign, result);
