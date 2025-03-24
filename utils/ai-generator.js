@@ -38,7 +38,7 @@ async function generatePrediction(sign) {
       - Любовь и отношения: ${loveText}.
       - Карьера и финансы: ${careerText}.
       - Здоровье: ${healthText}.
-      Добавь мистический стиль и советы от звёзд. Ответ на русском.
+      Оформи в мистическом стиле. В конце добавь ОДИН главный совет от звёзд (1-2 предложения) без нумерации. Ответ на русском.
     `;
 
     const response = await axios.post('https://api.mistral.ai/v1/chat/completions', {
